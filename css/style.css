@@ -890,7 +890,7 @@ select.form-control.has-value {
 
 .bottom-img {
     position: relative;
-    bottom: -10px;
+    bottom: -1px;
     width: 100%;
 }
 

@@ -520,7 +520,7 @@ select.form-control.has-value {
 .main-menu ul>li a {
     margin: 0 0 0 20px;
     font-size: 14px;
-    color: #363232;
+    color: white;
     display: block;
     font-weight: 400;
     background-color: transparent;
@@ -607,6 +607,11 @@ select.form-control.has-value {
     margin-bottom: -8px;
 }
 
+.navbar-brand img {
+    width: 55px; /* Cambia el ancho a tu preferencia */
+    height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
+}
+
 .navbar-toggler {
     background: transparent;
     padding: .5rem .75rem;
@@ -630,13 +635,7 @@ select.form-control.has-value {
     color: #fafafa;
 }
 
-.affix {
-    background-color: #00438b;
-    -webkit-transition: padding 0.2s ease-out;
-    -moz-transition: padding 0.2s ease-out;
-    -o-transition: padding 0.2s ease-out;
-    transition: padding 0.2s ease-out;
-}
+
 
 .white-bg.affix,
 .custom-nav.affix {
@@ -655,7 +654,7 @@ select.form-control.has-value {
 }
 
 .bg-transparent ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     opacity: 0.8;
 }
 
@@ -663,7 +662,7 @@ select.form-control.has-value {
     opacity: 1;
 }
 
-.bg-transparent.affix {
+.bg-transparent {
     background: rgba(0, 67, 139, 0.95) !important;
 }
 
@@ -677,7 +676,7 @@ select.form-control.has-value {
         background: #00438b !important;
         padding: .95rem 1rem;
     }
-    .white-bg.affix,
+
     .custom-nav.affix,
     .navbar.white-bg {
         background: #ffffff !important;
@@ -719,7 +718,7 @@ select.form-control.has-value {
 @media (min-width: 992px) {
     .navbar {
         border-bottom: 1px solid rgba(0, 0, 0, 0);
-        background: transparent;
+        background: #00438b;
         -o-transition: border-bottom .3s ease-in-out, background .3s ease-in-out, padding .3s ease-in-out;
         -webkit-transition: border-bottom .3s ease-in-out, background .3s ease-in-out, padding .3s ease-in-out;
         -moz-transition: border-bottom .3s ease-in-out, background .3s ease-in-out, padding .3s ease-in-out;

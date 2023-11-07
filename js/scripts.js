@@ -1,10 +1,3 @@
-/*================
- Template Name: AgencyCo Digital Agency and Marketing
- Description: AgencyCo is digital agency and marketing template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
- =======================*/
-
 // TABLE OF CONTENTS
 // 1. fixed navbar
 // 2. page scrolling feature

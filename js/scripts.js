@@ -310,4 +310,15 @@ jQuery(function($) {
     }
 
 
+    $(document).ready(function() {
+        var splitText = new SplitText('h1', {type: 'chars'});
+      
+        var tl = gsap.timeline();
+      
+        tl
+          .from(splitText.chars, {duration: 0.05, opacity: 0, stagger: 0.0625, ease: 'power1.in'})
+          .to(splitText.chars, {duration: 0.15, opacity: 0, stagger: 0.0625, ease: 'power3.inOut'}, '+=3');
+      });
+
 }); // JQuery end
+

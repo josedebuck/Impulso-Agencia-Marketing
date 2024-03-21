@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.typed {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative; /* Permite posicionar el cursor dentro del div */
+}
+
+.typed p {
+  font-size: 3rem;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+.typed p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+
+.typed p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 0.1px;
+  animation: blink 1s infinite;
+  position: absolute; /* Para posicionar el cursor dentro del contenedor .typed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.typed p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100% { background-color: #ccc; }
+}
+
+@media screen and (max-width: 600px) {
+  .typed {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .typed p {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .typed p:first-child {
+    order: 1; /* Cambiar el orden para que 'impulso es' aparezca primero */
+    margin-bottom: 20px; /* Agregar un espacio entre 'impulso es' y el texto animado */
+  }
+}

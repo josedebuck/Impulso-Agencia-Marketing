@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
+
 
 .typed {
   display: flex;

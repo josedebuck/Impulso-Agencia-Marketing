@@ -70,7 +70,6 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -209,6 +208,7 @@ figure {
 img {
     vertical-align: middle;
     border-style: none
+    
 }
 
 svg {

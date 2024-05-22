@@ -14,7 +14,7 @@
     animation: breathe 2s ease-in-out infinite;
   }
   
-  /*Estilos solo al icono whatsapp*/
+
   .whatsapp-btn i {
     color: #fff;
     font-size: 24px;
@@ -22,7 +22,7 @@
     text-decoration: none;
   }
   
-  /*Estilos con animation contorno respirando*/
+
   @keyframes breathe {
     0% {
       box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
@@ -35,7 +35,7 @@
     }
   }
   
-  /*Estilos de animacion del icono latiendo*/
+
   @keyframes beat {
     0% {
       transform: scale(1);

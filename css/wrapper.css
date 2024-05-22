@@ -8,7 +8,7 @@
   width: 90%;
   max-width: 500px;
   text-align: center;
-  position: relative; /* Permite posicionar el cursor dentro del div */
+  position: relative; 
 }
 
 .typed p {
@@ -22,7 +22,7 @@
 
 .typed p span.typed-text {
   font-weight: normal;
-  color: #EAE3CE;
+  color: #FF7F50;
 }
 
 .typed p span.cursor {
@@ -31,7 +31,7 @@
   margin-left: 0.1rem;
   width: 0.1px;
   animation: blink 1s infinite;
-  position: absolute; /* Para posicionar el cursor dentro del contenedor .typed */
+  position: absolute; 
   top: 50%;
   transform: translateY(-50%);
 }
@@ -58,7 +58,7 @@
     text-align: left;
   }
   .typed p:first-child {
-    order: 1; /* Cambiar el orden para que 'impulso es' aparezca primero */
-    margin-bottom: 20px; /* Agregar un espacio entre 'impulso es' y el texto animado */
+    order: 1; 
+    margin-bottom: 20px; 
   }
 }

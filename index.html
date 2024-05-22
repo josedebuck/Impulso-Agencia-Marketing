@@ -59,7 +59,7 @@
 <body>
 
     <!--header section start-->
-    <header class="header">
+    <header class="header" id="inicio">
         <!--start navbar-->
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
@@ -70,8 +70,8 @@
 
                 <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link page-scroll" href="#">Inicio</a>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#about">Sobre Nosotros</a>
@@ -80,13 +80,8 @@
                             <a class="nav-link page-scroll" href="#services">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#pricing">Precios</a>
-                        </li>
-                        
-                        <li class="nav-item">
                             <a class="nav-link page-scroll" href="#contact">Contacto</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -153,7 +148,7 @@
                         <div class="single-promo single-promo-hover gray-light-bg h-100 rounded">
                             <img src="img/service-marketingdigital2.jpg" alt="promo image" class="img-fluid img-full-box">
                             <div class="promo-info">
-                                <h5 class="h5promo">Resultados Comprobados</h5>
+                                <h5 class="h5promo">Seguimiento de Resultados</h5>
  
                             </div>
                         </div>
@@ -565,8 +560,8 @@
 
                             <h5>Nuestro contacto</h5>
                             <br>
-                            <span>Phone: +54 3424449585 </span> <br>
-                            <span>Email: <a href="mailto:agenciaonlineimpulso@gmail.com" class="link-color">agenciaonlineimpulso@gmail.com</a></span>
+                            <span>Teléfono: +54 342-444-9585 </span> <br>
+                            <span>Correo: <a href="mailto:agenciaonlineimpulso@gmail.com" class="link-color">agenciaonlineimpulso@gmail.com</a></span>
 
                         </div>
                     </div>
@@ -581,13 +576,20 @@
     <!--footer section start-->
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="https://www.instagram.com/impulsoagenciaonline/"><i class="icon ion-social-instagram"></i></a><a href="https://api.whatsapp.com/send?phone=3425444777"><i class="icon ion-social-whatsapp"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Inicio</a></li>
-                <li class="list-inline-item"><a href="#about">Sobre Nosotros</a></li>
-                <li class="list-inline-item"><a href="#services">Servicios</a></li>
-                <li class="list-inline-item"><a href="#price">Precios</a></li>
-                <li class="list-inline-item"><a href="#contact">Contacto</a></li>
+            <div class="social"><a href="https://www.instagram.com/impulsoagenciaonline/" target="_blank"><i class="icon ion-social-instagram"></i></a><a href="https://api.whatsapp.com/send?phone=3425444777" target="_blank"><i class="icon ion-social-whatsapp"></i></a><a href="https://www.facebook.com/profile.php?id=61557235760987" target="_blank"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="footer-basic">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contacto</a>
+                </li>
             </ul>
             <p class="copyright">Impulso Marketing Digital © 2023</p>
         </footer>
@@ -597,20 +599,7 @@
 
 
     <!-- Google Sheets -->
-    <script>
-        var form = document.getElementById('sheetdb-form');
-        form.addEventListener("submit", e => {
-            e.preventDefault();
-            fetch(form.action, {
-                method: "POST",
-                body: new FormData(document.getElementById("sheetdb-form")),
-            }).then(
-                response => response.json()
-            ).then((html) => {
 
-            })
-        });
-    </script>
 
 <script>
     var form = document.getElementById('sheetdb-form');
